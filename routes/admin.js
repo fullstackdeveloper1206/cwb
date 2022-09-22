@@ -5,7 +5,7 @@ var admin = require('../controllers/api/admin');
 
 
 router.post('/login', admin.login)
-router.get('/users/:id', admin.getUsers)
+router.get('/users', admin.getUsers)
 router.post('/users/add', admin.addUser)
 router.post('/users/account/save/keys', admin.saveAPIKeys)
 router.post('/users/account/save', admin.saveAccount)
